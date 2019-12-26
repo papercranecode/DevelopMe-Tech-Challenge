@@ -13,30 +13,32 @@
     </head>
 
     <body>
-        <main>
-            <div class="text-section">
-                <h1>RANDOM TEAM PICKER</h1>
-                <p>Enter the names of your players in the box and click generate to create your very own 5 a side match!</p>
-            </div>
+        <main class="body">
+            <section class="text-section">
+                <h1 class="header">RANDOM TEAM PICKER</h1>
+                <p class="main-text">Enter the names of your players in the box and click generate to create your very own 5 a side match!</p>
+            </section>
 
-            <div class="enter-team-names">
-                <form>
-                    <label for="enterNames">ENTER NAMES</label>
-                    <textarea rows="10" cols="30" name="enter-names" value="enter-names"></textarea>
-                </form>
-                <button type="button">RANDOMISE!</button>
-            </div>
+            <section class="team-section">
+                <form class="team-names">
+                    <div class="enter-team-names">
+                        <label for="enter-names" class="label">ENTER NAMES</label>
+                        <textarea rows="10" cols="30" name="enter-names" value="enter-names" class="textarea"></textarea>
+                    </form>
+                    <button type="button">RANDOMISE!</button>
+                </div>
 
-            <div class="teams">
-                <div class="team-1">
-                    <h3>TEAM 1</h3>
-                    <p></p>
+                <div class="teams">
+                    <div class="team-1">
+                        <h4 class="team-header">TEAM 1</h4>
+                        <p></p>
+                    </div>
+                    <div class="team-2">
+                        <h4 class="team-header">TEAM 2</h4>
+                        <p></p>
+                    </div>
                 </div>
-                <div class="team-2">
-                    <h3>TEAM 2</h3>
-                    <p></p>
-                </div>
-            </div>
+            </section>
 
         </main>
 
