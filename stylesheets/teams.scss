@@ -4,37 +4,58 @@
     font-size: $fontSizeLarge;
     width: 60vw;
     padding: 15px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
 }
 
-.team-names {
-    display: block;
-    float: left;
-    padding: 10px;
-}
-
-.teams {
-    display: block;
-    float: right;
-    padding: 10px;
-}
 
 .enter-team-names {
-    display: inline-block;
     padding: 15px;
+    margin-top: 10vh;
 }
 
 .label {
-    display: block;
+    font-size: $fontSizeMedium;
+    font-weight: bold;
+    background: $colourGreen;
+    padding: 10px;
+    text-align: center;
 }
 
-.trextarea {
-    display: block;
+.button {
+    background: $colourBrown;
+    color: $colourPale;
+    height: 5vh;
+    width: 12vw;
+    font-size: $fontSizeRegular;
+    margin-left: 15px;
+}
+
+.team-names {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.teams {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.team-card {
+    padding: 15px;
+    margin-top: 10vh;
 }
 
 .team-header {
     font-size: $fontSizeMedium;
+    background: $colourGreen;
+    width: 10vw;
+    text-align: center;
+    padding: 10px;
 }
 
-.teams {
-    display: block;
+.names {
+    font-size: $fontSizeRegular;
 }
