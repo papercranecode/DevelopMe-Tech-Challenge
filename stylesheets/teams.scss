@@ -1,0 +1,40 @@
+.team-section {
+    background: $colourPale;
+    color: $colourBlack;
+    font-size: $fontSizeLarge;
+    width: 60vw;
+    padding: 15px;
+}
+
+.team-names {
+    display: block;
+    float: left;
+    padding: 10px;
+}
+
+.teams {
+    display: block;
+    float: right;
+    padding: 10px;
+}
+
+.enter-team-names {
+    display: inline-block;
+    padding: 15px;
+}
+
+.label {
+    display: block;
+}
+
+.trextarea {
+    display: block;
+}
+
+.team-header {
+    font-size: $fontSizeMedium;
+}
+
+.teams {
+    display: block;
+}

@@ -4,3 +4,16 @@ $colourPale: #d9d7ba;
 $colourBrown: #595143;
 $colourBlack: #0d0c0b;
 $colourOrange: #bf5d24;
+
+// FONTS
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap');
+}
+
+// FONT SIZES
+$fontSizeLarge: 30px;
+$fontSizeMedium: 25px;
+$fontSizeRegular: 15px;

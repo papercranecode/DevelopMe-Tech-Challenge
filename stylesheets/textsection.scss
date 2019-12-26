@@ -1,3 +1,19 @@
 .text-section {
     background: $colourGreen;
+    color: $colourBlack;
+    width: 40vw;
+    display: inline-block;
+    padding: 15px;
+}
+
+.header {
+    display: block;
+    font-size: $fontSizeLarge;
+    padding: 10px;
+}
+
+.main-text {
+    font-size: $fontSizeRegular;
+    display: block;
+    padding: 10px;
 }
