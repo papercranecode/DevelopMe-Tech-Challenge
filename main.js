@@ -10,12 +10,18 @@
     let getNames = d.getElementById('textarea').value.split('\n');
     
     //this shuffles the items in the array form the text area
-    function shuffle() {
-        getNames.sort(() => Math.random() - 0.5);
-      };
+    let shuffleArray = shuffle(
+        getNames.sort(() => Math.random() - 0.5)
+    );
+    
+    //this splits the array into two separate arrays
+    let array1 = shuffleArray.slice(0, 4);
+    let array2 = shuffleArray.slice(5, 9);
  
+    //these are the teams which we want to push the values of the array into
     let team1 = []
     let team2 = []
+
 
     for (let i = 0; i < 10; i += 1) {
 
