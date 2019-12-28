@@ -7,18 +7,28 @@
 //     getNames.sort(() => Math.random() - 0.5)
 // );
 
+// function alert() {
+//     console.log("Hello");
+// }
+
 
 //((d) => { //Immediately Invoked Function Expression - this means all variables will be local
-    
-function alert() {
-    console.log("Hello");
-}
+
+    //we need to use preventDefault to keep the browser from immediately running the array
+    let prevent = document.getElementById('textarea').addEventListener("click", event => {
+        event.preventDefault();
+    })
+
     //this gets the names inputted in the text area and puts them into an array. '\n' puts each item on a new line.
     let arra1 = document.getElementById('textarea').value.split('\n');
     console.log(arra1);
-    
+
+    //we get the button by its ID and add an event listener to it
+    let button = document.getElementById('button');
+    button.addEventListener("click", () => console.log("clicked"));
+
     // this shuffles the items in the array from the text area
-    function shuffle(arra1) {
+    function shuffle() {
         let ctr = arra1.length, temp, index;
     
     // While there are elements in the array
@@ -36,6 +46,18 @@ function alert() {
     }
     var myArray = arra1;
     console.log(shuffle(arra1));
+
+    //outputting thr array into the HTML
+    ul = document.createElement('ul');
+
+    document.getElementById('insert').appendChild(ul);
+    
+    arra1.forEach(function (item) {
+        let li = document.createElement('li');
+        ul.appendChild(li);
+    
+        li.innerHTML += item;
+    });
 
     //this splits the array into two separate arrays
     // let array1 = shuffleArray.slice(0, 4);
