@@ -15,76 +15,83 @@
 //((d) => { //Immediately Invoked Function Expression - this means all variables will be local
 
     //we need to use preventDefault to keep the browser from immediately running the array
-    let prevent = document.getElementById('textarea').addEventListener("click", event => {
-        event.preventDefault();
-    })
-
-    //this gets the names inputted in the text area and puts them into an array. '\n' puts each item on a new line.
-    let arra1 = document.getElementById('textarea').value.split('\n');
-
-    //we get the button by its ID and add an event listener to it
-    let button = document.getElementById('button');
-    button.addEventListener("click", () => console.log("clicked"));
-
-    console.log(arra1)
-
-    // this shuffles the items in the array from the text area
-    function shuffle() {
-        let ctr = arra1.length, temp, index;
+    let buttonClick = document.getElementById('button');
     
-    // While there are elements in the array
-        while (ctr > 0) {
-    // Pick a random index
-            index = Math.floor(Math.random() * ctr);
-    // Decrease ctr by 1
-            ctr--;
-    // And swap the last element with it
-            temp = arra1[ctr];
-            arra1[ctr] = arra1[index];
-            arra1[index] = temp;
+        buttonClick.addEventListener("click", myFunction => {
+
+        //this gets the names inputted in the text area and puts them into an array. '\n' puts each item on a new line.
+        let arra1 = document.getElementById('textarea').value.split('\n');
+
+        //we get the button by its ID and add an event listener to it
+        let button = document.getElementById('button');
+        button.addEventListener("click", () => console.log("clicked"));
+
+        console.log(arra1)
+
+        // this shuffles the items in the array from the text area
+        function shuffle() {
+            let ctr = arra1.length, temp, index;
+        
+        // While there are elements in the array
+            while (ctr > 0) {
+        // Pick a random index
+                index = Math.floor(Math.random() * ctr);
+        // Decrease ctr by 1
+                ctr--;
+        // And swap the last element with it
+                temp = arra1[ctr];
+                arra1[ctr] = arra1[index];
+                arra1[index] = temp;
+            }
+            return arra1;
         }
-        return arra1;
-    }
 
-    //we store the shuffle function in the variable myArray so that we can use it later
-    let myArray = shuffle();
-    console.log(myArray);
+        //we store the shuffle function in the variable myArray so that we can use it later
+        let myArray = shuffle();
+        console.log(myArray);
 
-    //this splits the array into two separate arrays
-    let array1 = myArray.slice(0, 5);
-    let array2 = myArray.slice(5, 10);
+        //this splits the array into two separate arrays
+        let array1 = myArray.slice(0, 5);
+        let array2 = myArray.slice(5, 10);
 
-    console.log(array1);
-    console.log(array2);
+        console.log(array1);
+        console.log(array2);
 
-    //outputting thr array into the HTML
-    // ul = document.createElement('ul');
+        //outputting thr array into the HTML
+        // ul = document.createElement('ul');
 
-    // document.getElementById('insert1').appendChild(ul);  
-    // array1.forEach(function (item1) {
-    //     let li = document.createElement('li');
-    //     ul.appendChild(li);
-    
-    //     li.textContent += item1;
-    // });
+        // document.getElementById('insert1').appendChild(ul);  
+        // array1.forEach(function (item1) {
+        //     let li = document.createElement('li');
+        //     ul.appendChild(li);
+        
+        //     li.textContent += item1;
+        // });
 
-    // document.getElementById('insert2').appendChild(ul);
-    // array2.forEach(function (item2) {
-    //     let li = document.createElement('li');
-    //     ul.appendChild(li);
-    
-    //     li.textContent += item2;
-    // });
+        // document.getElementById('insert2').appendChild(ul);
+        // array2.forEach(function (item2) {
+        //     let li = document.createElement('li');
+        //     ul.appendChild(li);
+        
+        //     li.textContent += item2;
+        // });
 
-    //print the array to string
-    let arrayUno = array1.toString();
-    let arrayDos = array2.toString();
+        //print the array to string
 
-    //inserting the strings into each paragraph
-    document.getElementById('insert1').textContent = arrayUno;
-    document.getElementById('insert2').textContent = arrayDos;
+        //while loop
+        //new string += array1[i]
+        //new string += /n
 
 
+        let arrayUno = array1.toString().split('\n');
+        let arrayDos = array2.toString().split('\n');
+
+
+        //inserting the strings into each paragraph
+        document.getElementById('insert1').textContent = arrayUno;
+        document.getElementById('insert2').textContent = arrayDos;
+
+    });
 
 // })(document); //this calls the function immediately
 
