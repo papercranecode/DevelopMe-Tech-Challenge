@@ -51,8 +51,8 @@
         console.log(myArray);
 
         //this splits the array into two separate arrays
-        let array1 = myArray.slice(0, 5);
-        let array2 = myArray.slice(5, 10);
+        let array1 = myArray.slice(0, (myArray.length / 2));
+        let array2 = myArray.slice((myArray.length / 2), myArray.length);
 
         console.log(array1);
         console.log(array2);
