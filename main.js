@@ -82,10 +82,10 @@
         //new string += array1[i]
         //new string += /n
 
+        br = document.createElement('br');
 
-        let arrayUno = array1.toString().split('\n');
-        let arrayDos = array2.toString().split('\n');
-
+        let arrayUno = array1.toString().split(',').join('\n');
+        let arrayDos = array2.toString().split(',').join('\n');
 
         //inserting the strings into each paragraph
         document.getElementById('insert1').textContent = arrayUno;
