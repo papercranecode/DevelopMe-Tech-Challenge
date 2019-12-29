@@ -26,6 +26,8 @@
     let button = document.getElementById('button');
     button.addEventListener("click", () => console.log("clicked"));
 
+    console.log(arra1)
+
     // this shuffles the items in the array from the text area
     function shuffle() {
         let ctr = arra1.length, temp, index;
@@ -43,11 +45,14 @@
         }
         return arra1;
     }
-    let myArray = arra1;
+
+    //we store the shuffle function in the variable myArray so that we can use it later
+    let myArray = shuffle();
+    console.log(myArray);
 
     //this splits the array into two separate arrays
-    let array1 = myArray.slice(0, 4);
-    let array2 = myArray.slice(5, 9);
+    let array1 = myArray.slice(0, 5);
+    let array2 = myArray.slice(5, 10);
 
     console.log(array1);
     console.log(array2);
@@ -75,9 +80,10 @@
     let arrayUno = array1.toString();
     let arrayDos = array2.toString();
 
-    document.getElementById('insert1').textContent= arrayUno;
-    document.getElementById('insert2').textContent= arrayDos;
-    
+    //inserting the strings into each paragraph
+    document.getElementById('insert1').textContent = arrayUno;
+    document.getElementById('insert2').textContent = arrayDos;
+
 
 
 // })(document); //this calls the function immediately
