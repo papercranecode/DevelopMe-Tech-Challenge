@@ -21,7 +21,6 @@
 
     //this gets the names inputted in the text area and puts them into an array. '\n' puts each item on a new line.
     let arra1 = document.getElementById('textarea').value.split('\n');
-    console.log(arra1);
 
     //we get the button by its ID and add an event listener to it
     let button = document.getElementById('button');
@@ -44,33 +43,42 @@
         }
         return arra1;
     }
-    var myArray = arra1;
-    console.log(shuffle(arra1));
-
-    //outputting thr array into the HTML
-    ul = document.createElement('ul');
-
-    document.getElementById('insert').appendChild(ul);
-    
-    arra1.forEach(function (item) {
-        let li = document.createElement('li');
-        ul.appendChild(li);
-    
-        li.innerHTML += item;
-    });
+    let myArray = arra1;
 
     //this splits the array into two separate arrays
-    // let array1 = shuffleArray.slice(0, 4);
-    // let array2 = shuffleArray.slice(5, 9);
- 
-    //these are the teams which we want to push the values of the array into
-    // let team1 = []
-    // let team2 = []
+    let array1 = myArray.slice(0, 4);
+    let array2 = myArray.slice(5, 9);
 
-    //this loop pushes the names into the two separate arrays
-    //for (let i = 0; i < 10; i += 1) {
+    console.log(array1);
+    console.log(array2);
 
-    // };
+    //outputting thr array into the HTML
+    // ul = document.createElement('ul');
+
+    // document.getElementById('insert1').appendChild(ul);  
+    // array1.forEach(function (item1) {
+    //     let li = document.createElement('li');
+    //     ul.appendChild(li);
+    
+    //     li.textContent += item1;
+    // });
+
+    // document.getElementById('insert2').appendChild(ul);
+    // array2.forEach(function (item2) {
+    //     let li = document.createElement('li');
+    //     ul.appendChild(li);
+    
+    //     li.textContent += item2;
+    // });
+
+    //print the array to string
+    let arrayUno = array1.toString();
+    let arrayDos = array2.toString();
+
+    document.getElementById('insert1').textContent= arrayUno;
+    document.getElementById('insert2').textContent= arrayDos;
+    
+
 
 // })(document); //this calls the function immediately
 
