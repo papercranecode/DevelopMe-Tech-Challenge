@@ -1,27 +1,47 @@
 .team-section {
-    background: $colourPale;
+    background: $colourOrange;
+    background-image: url('../images/football.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     color: $colourBlack;
     font-size: $fontSizeLarge;
-    width: 60vw;
+    width: 65vw;
     padding: 15px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    justify-items: center;
+    padding-top: 20vh;
+    overflow: hidden;
 }
-
 
 .enter-team-names {
     padding: 15px;
-    margin-top: 10vh;
 }
 
 .label {
     font-size: $fontSizeMedium;
     font-weight: bold;
-    background: $colourGreen;
-    padding: 10px;
+    background: $colourBrown;
+    padding: 15px;
     text-align: center;
+    border-radius: 15px 15px 0px 0px;
+    width: 20vw;
+}
+
+.textarea {
+    resize: none;
+    overflow: auto;
+    width: 20vw;
+    height: 35vh;
+    border: 1px solid $colourBrown;
+    padding: 15px;
+    background: $colourPale;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    border-radius: 0px 0px 15px 15px;
+    width: 20vw;
 }
 
 .button {
@@ -30,12 +50,14 @@
     height: 5vh;
     width: 12vw;
     font-size: $fontSizeRegular;
-    margin-left: 15px;
+    border-radius: 5px;
 }
 
 .team-names {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    display: block;
+    text-align: center;
 }
 
 .teams {
@@ -45,17 +67,31 @@
 
 .team-card {
     padding: 15px;
-    margin-top: 10vh;
 }
 
 .team-header {
     font-size: $fontSizeMedium;
-    background: $colourGreen;
-    width: 10vw;
+    background: $colourBrown;
+    width: 15vw;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .names {
     font-size: $fontSizeRegular;
+    background: $colourPale;
+    width: 15vw;
+    padding: 15px;
+    text-decoration: none;
+    list-style-type: none;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.vs {
+    font-size: $fontSizeHeader;
+    font-weight: bolder;
+    color: $colourBlack;
+    display: block;
+    text-align: center;
 }

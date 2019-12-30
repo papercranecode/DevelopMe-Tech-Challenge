@@ -1,14 +1,17 @@
 .text-section {
-    background: $colourGreen;
+    background: $colourBrown;
     color: $colourBlack;
-    width: 40vw;
+    width: 35vw;
     display: inline-block;
     padding: 15px;
+    padding-top: 10vh;
+    overflow: hidden;
 }
 
 .header {
     display: block;
     font-size: $fontSizeHeader;
+    font-weight: bolder;
     padding: 10px;
     margin-top: 10vh;
 }
@@ -17,4 +20,39 @@
     font-size: $fontSizeRegular;
     display: block;
     padding: 10px;
+}
+
+.random {
+    margin-bottom: -3vh;
+}
+
+.team {
+    font-family: 'Open Sans';
+    color: $colourOrange;
+    font-size: $fontSizeTeam;
+    float: right;
+    margin-bottom: -3vh;
+    margin-top: -2vh;
+}
+ 
+.picker {
+    margin-top: -3vh;
+}
+
+.line1 {
+    background: $colourOrange;
+    padding: 2px;
+    margin-top: 2vh;
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.line2 {
+    background: $colourOrange;
+    padding: 2px;
+    margin-top: -1vh;
+    max-width: 70%;
+    display: flex;
+    justify-content: flex-start;
 }
