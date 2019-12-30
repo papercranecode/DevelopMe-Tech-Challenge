@@ -7,6 +7,7 @@
 * {
   font-family: "Roboto", arial, sans-serif;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .body {
@@ -59,24 +60,24 @@
 .line1 {
   background: #bf5d24;
   padding: 2px;
-  margin-top: 2vh;
-  max-width: 50%;
-  display: flex;
-  justify-content: flex-end;
+  margin-top: 1vh;
+  width: 12.5vw;
+  display: block;
+  float: right;
 }
 
 .line2 {
   background: #bf5d24;
   padding: 2px;
   margin-top: -1vh;
-  max-width: 70%;
-  display: flex;
-  justify-content: flex-start;
+  width: 20vw;
+  display: block;
+  float: left;
 }
 
 .team-section {
   background: #bf5d24;
-  background-image: url("../images/football.jpg");
+  background-image: url("../images/football1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: #0d0c0b;
@@ -147,8 +148,9 @@
 
 .team-header {
   font-size: 25px;
+  font-weight: bold;
   background: #595143;
-  width: 15vw;
+  width: 20vw;
   text-align: center;
   padding: 15px;
   border-radius: 15px 15px 0px 0px;
@@ -157,7 +159,7 @@
 .names {
   font-size: 15px;
   background: #d9d7ba;
-  width: 15vw;
+  width: 20vw;
   padding: 15px;
   text-decoration: none;
   list-style-type: none;
@@ -167,9 +169,10 @@
 .vs {
   font-size: 10vh;
   font-weight: bolder;
-  color: #0d0c0b;
+  color: #bf5d24;
   display: block;
   text-align: center;
+  padding: 10px;
 }
 
 .footer {
