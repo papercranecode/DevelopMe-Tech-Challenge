@@ -16,6 +16,11 @@
   width: 100vw;
 }
 
+@media screen and (max-width: 768px) {
+  .body {
+    display: block;
+  }
+}
 .text-section {
   background: #595143;
   color: #0d0c0b;
@@ -75,6 +80,45 @@
   float: left;
 }
 
+@media screen and (max-width: 768px) {
+  .text-section {
+    margin-top: -5vh;
+    width: 100vw;
+    padding-top: 0vh;
+    display: block;
+    padding: 5px;
+    overflow: hidden;
+  }
+
+  .header {
+    font-size: 7vh;
+    padding: 0vh;
+    display: block;
+    text-align: center;
+  }
+
+  .random {
+    padding: 0vh;
+    margin-bottom: 0vh;
+  }
+
+  .team {
+    font-size: 7vh;
+    padding: 0vh;
+    margin-bottom: 0vh;
+    margin-top: 0vh;
+    float: none;
+  }
+
+  .picker {
+    padding: 0vh;
+    margin-top: 0vh;
+  }
+
+  .line1, .line2 {
+    display: none;
+  }
+}
 .team-section {
   background: #bf5d24;
   background-image: url("../images/football1.jpg");
@@ -175,6 +219,26 @@
   padding: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .team-section {
+    width: 100vw;
+    padding: 15px;
+    display: block;
+    position: relative;
+  }
+
+  .textarea {
+    display: block;
+  }
+
+  .button {
+    display: block;
+  }
+
+  .team-names {
+    display: block;
+  }
+}
 .footer {
   text-align: center;
   background: #0d0c0b;

@@ -97,3 +97,25 @@
     text-align: center;
     padding: 10px;
 }
+
+//mobile version
+@media screen and (max-width: 768px) {
+    .team-section {
+        width: 100vw;
+        padding: 15px;
+        display: block;
+        position: relative;
+    }
+
+    .textarea {
+        display: block;
+    }
+
+    .button {
+        display: block;
+    }
+
+    .team-names {
+        display: block;
+    }
+}

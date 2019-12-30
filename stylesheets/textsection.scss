@@ -56,3 +56,44 @@
     display: block;
     float: left;
 }
+
+//mobile version
+@media screen and (max-width: 768px) {
+    .text-section {
+        margin-top: -5vh;
+        width: 100vw;
+        padding-top: 0vh;
+        display: block;
+        padding: 5px;
+        overflow: hidden;
+    }
+
+    .header {
+        font-size: $fontMobileTeam;
+        padding: 0vh;
+        display: block;
+        text-align: center;
+    }
+
+    .random {
+        padding: 0vh;
+        margin-bottom: 0vh;
+    }
+
+    .team {
+        font-size: $fontMobileTeam;
+        padding: 0vh;
+        margin-bottom: 0vh;
+        margin-top: 0vh;
+        float: none;
+    }
+
+    .picker {
+        padding: 0vh;
+        margin-top: 0vh;
+    }
+
+    .line1, .line2 {
+        display: none;
+    }
+}
