@@ -90,8 +90,12 @@
         //inserting the strings into each paragraph
         document.getElementById('insert1').textContent = arrayUno;
         document.getElementById('insert2').textContent = arrayDos;
-
     });
+
+    //this clears the text area
+    function clearTextArea() {
+        document.getElementById('textarea').value = '';
+    }
 
 // })(document); //this calls the function immediately
 
