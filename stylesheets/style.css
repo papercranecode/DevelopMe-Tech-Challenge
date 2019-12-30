@@ -90,6 +90,11 @@
     overflow: hidden;
   }
 
+  .main-text {
+    padding: 10px;
+    width: 75vw;
+  }
+
   .header {
     font-size: 7vh;
     padding: 0vh;
@@ -124,6 +129,7 @@
   background-image: url("../images/football1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: scroll;
   color: #0d0c0b;
   font-size: 30px;
   width: 65vw;
@@ -148,7 +154,7 @@
   padding: 15px;
   text-align: center;
   border-radius: 15px 15px 0px 0px;
-  width: 20vw;
+  width: 25vw;
 }
 
 .textarea {
@@ -156,16 +162,25 @@
   overflow: auto;
   width: 20vw;
   height: 35vh;
-  border: 1px solid #595143;
+  border: 0px #595143;
   padding: 15px;
   background: #d9d7ba;
   grid-column: 1/2;
   grid-row: 2/3;
   border-radius: 0px 0px 15px 15px;
-  width: 20vw;
+  width: 25vw;
 }
 
 .button {
+  background: #595143;
+  color: #d9d7ba;
+  height: 5vh;
+  width: 12vw;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.buttonClear {
   background: #595143;
   color: #d9d7ba;
   height: 5vh;
@@ -194,7 +209,7 @@
   font-size: 25px;
   font-weight: bold;
   background: #595143;
-  width: 20vw;
+  width: 25vw;
   text-align: center;
   padding: 15px;
   border-radius: 15px 15px 0px 0px;
@@ -203,7 +218,7 @@
 .names {
   font-size: 15px;
   background: #d9d7ba;
-  width: 20vw;
+  width: 25vw;
   padding: 15px;
   text-decoration: none;
   list-style-type: none;
@@ -227,16 +242,34 @@
     position: relative;
   }
 
+  .label {
+    display: block;
+    width: 75vw;
+  }
+
   .textarea {
     display: block;
+    width: 75vw;
   }
 
   .button {
     display: block;
+    width: 20vw;
   }
 
-  .team-names {
+  .teams {
+    padding: 10px;
+    margin-top: 5vh;
+  }
+
+  .team-header {
     display: block;
+    width: 75vw;
+  }
+
+  .names {
+    display: block;
+    width: 75vw;
   }
 }
 .footer {
