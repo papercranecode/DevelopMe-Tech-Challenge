@@ -15,27 +15,34 @@
     <body>
         <main class="body">
             <section class="text-section">
-                <h1 class="header">RANDOM TEAM PICKER</h1>
-                <p class="main-text">Enter the names of your players in the box and click generate to create your very own 5 a side match!</p>
+                <div class="header">
+                    <div class="random">RANDOM</div> 
+                    <div class="line1"></div>
+                    <div class="team">TEAM </div>
+                    <div class="picker">PICKER</div>
+                    <div class="line2"></div>
+                </div>
+                <p class="main-text">Enter the names of your players on a new line  each in the box and click the button to create your very own 5 a side match!</p>
             </section>
 
             <section class="team-section">
                 <div class="team-names">
                     <div class="enter-team-names">
-                        <div class="label">ENTER NAMES</div>
-                        <textarea rows="10" cols="30" name="enter-names" value="enter-names" class="textarea"></textarea>
+                        <div class="label">ENTER PLAYER NAMES</div>
+                        <textarea placeholder="Add your names here!" type="text" class="textarea" id="textarea"></textarea>
                     </div>
-                    <button type="button" class="button">RANDOMISE!</button>
+                    <button type="button" class="button" id="button" onClick="">RANDOMISE!</button>
                 </div>
 
                 <div class="teams">
                     <div class="team-1 team-card">
                         <p class="team-header">TEAM 1</p>
-                        <p class="names">Dan <br /> Emily <br /> Miguel</p>
+                        <p class="names" id="insert1"></p>
                     </div>
+                    <div class="vs">VS</div>
                     <div class="team-2 team-card">
                         <p class="team-header">TEAM 2</p>
-                        <p class="names">Lorna <br /> Sash <br /> Jenny</p>
+                        <p class="names" id="insert2"></p>
                     </div>
                 </div>
             </section>
