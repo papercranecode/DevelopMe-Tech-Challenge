@@ -18,6 +18,7 @@
 
 .main-text {
     font-size: $fontSizeRegular;
+    color: $colourPale;
     display: block;
     padding: 10px;
 }
@@ -57,6 +58,47 @@
     float: left;
 }
 
+//tablet version
+@media screen and (max-width: 1150px) {
+    .text-section {
+        margin-top: -5vh;
+        width: 100vw;
+        display: block;
+        padding: 10px;
+        overflow: hidden;
+        text-align: center;
+        font-size: $fontTabletTeam;
+    }
+
+    .main-text {
+        padding: 10px;
+        display: block;
+    }
+
+    .header {
+        padding: 10px;
+        display: block;
+        font-size: $fontTabletTeam;
+    }
+
+    .random {
+        padding: 1px;
+    }
+
+    .team {
+        padding: 1px;
+        float: none;
+    }
+
+    .picker {
+        padding: 1px;
+    }
+
+    .line1, .line2 {
+        display: none;
+    }
+}
+
 //mobile version
 @media screen and (max-width: 768px) {
     .text-section {
@@ -86,7 +128,6 @@
     }
 
     .team {
-        font-size: $fontMobileTeam;
         padding: 0vh;
         margin-bottom: 0vh;
         margin-top: 0vh;

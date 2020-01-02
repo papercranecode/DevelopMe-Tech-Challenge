@@ -8,6 +8,7 @@
   font-family: "Roboto", arial, sans-serif;
   margin: 0 auto;
   box-sizing: border-box;
+  max-height: 100vh;
 }
 
 .body {
@@ -16,6 +17,11 @@
   width: 100vw;
 }
 
+@media screen and (max-width: 1150px) {
+  .body {
+    display: block;
+  }
+}
 @media screen and (max-width: 768px) {
   .body {
     display: block;
@@ -41,6 +47,7 @@
 
 .main-text {
   font-size: 15px;
+  color: #d9d7ba;
   display: block;
   padding: 10px;
 }
@@ -80,6 +87,45 @@
   float: left;
 }
 
+@media screen and (max-width: 1150px) {
+  .text-section {
+    margin-top: -5vh;
+    width: 100vw;
+    display: block;
+    padding: 10px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 9vh;
+  }
+
+  .main-text {
+    padding: 10px;
+    display: block;
+  }
+
+  .header {
+    padding: 10px;
+    display: block;
+    font-size: 9vh;
+  }
+
+  .random {
+    padding: 1px;
+  }
+
+  .team {
+    padding: 1px;
+    float: none;
+  }
+
+  .picker {
+    padding: 1px;
+  }
+
+  .line1, .line2 {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .text-section {
     margin-top: -5vh;
@@ -108,7 +154,6 @@
   }
 
   .team {
-    font-size: 7vh;
     padding: 0vh;
     margin-bottom: 0vh;
     margin-top: 0vh;
@@ -180,7 +225,7 @@
   border-radius: 5px;
 }
 
-.buttonClear {
+.button-clear {
   background: #595143;
   color: #d9d7ba;
   height: 5vh;
@@ -234,6 +279,47 @@
   padding: 10px;
 }
 
+@media screen and (max-width: 1024px) {
+  .team-section {
+    width: 100vw;
+    padding: 15px;
+    display: block;
+  }
+
+  .label {
+    display: block;
+    width: 75vw;
+  }
+
+  .textarea {
+    display: block;
+    width: 75vw;
+  }
+
+  .button {
+    display: inline-block;
+    width: 20vw;
+  }
+
+  .button-clear {
+    width: 20vw;
+  }
+
+  .teams {
+    padding: 10px;
+    margin-top: 5vh;
+  }
+
+  .team-header {
+    display: block;
+    width: 75vw;
+  }
+
+  .names {
+    display: block;
+    width: 75vw;
+  }
+}
 @media screen and (max-width: 768px) {
   .team-section {
     width: 100vw;
@@ -253,7 +339,11 @@
   }
 
   .button {
-    display: block;
+    display: inline-block;
+    width: 20vw;
+  }
+
+  .button-clear {
     width: 20vw;
   }
 
@@ -277,6 +367,17 @@
   background: #0d0c0b;
   color: #bf5d24;
   padding: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,3 +4,17 @@
     color: $colourOrange;
     padding: 10px;
 }
+
+//tablet version
+@media screen and (max-width: 1024px) {
+    .footer {
+        display: none;
+    };
+}
+
+//mobile version
+@media screen and (max-width: 768px) {
+    .footer {
+        display: none;
+    }
+}
