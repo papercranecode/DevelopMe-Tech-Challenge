@@ -1,22 +1,9 @@
-// function addNames() {
-//     names.push(document.getElementById("textarea").value);
-//     console.log(names);
-// }
-
-// let shuffleArray = shuffle(
-//     getNames.sort(() => Math.random() - 0.5)
-// );
-
-// function alert() {
-//     console.log("Hello");
-// }
-
-
 //((d) => { //Immediately Invoked Function Expression - this means all variables will be local
 
     //we need to use preventDefault to keep the browser from immediately running the array
     let buttonClick = document.getElementById('button');
     
+        //we wrap the code in an event listener so that it doesn't fire until the button is clicked
         buttonClick.addEventListener("click", myFunction => {
 
         //this gets the names inputted in the text area and puts them into an array. '\n' puts each item on a new line.
@@ -57,55 +44,28 @@
         console.log(array1);
         console.log(array2);
 
-        //outputting thr array into the HTML
-        // ul = document.createElement('ul');
+        //br = document.createElement('br');
 
-        // document.getElementById('insert1').appendChild(ul);  
-        // array1.forEach(function (item1) {
-        //     let li = document.createElement('li');
-        //     ul.appendChild(li);
-        
-        //     li.textContent += item1;
-        // });
-
-        // document.getElementById('insert2').appendChild(ul);
-        // array2.forEach(function (item2) {
-        //     let li = document.createElement('li');
-        //     ul.appendChild(li);
-        
-        //     li.textContent += item2;
-        // });
-
-        //print the array to string
-
-        //while loop
-        //new string += array1[i]
-        //new string += /n
-
-        br = document.createElement('br');
-
+        //we convert the array items into strings so that we can output them on the page
         let arrayUno = array1.toString().split(',').join('\n');
         let arrayDos = array2.toString().split(',').join('\n');
 
         //inserting the strings into each paragraph
         document.getElementById('insert1').textContent = arrayUno;
         document.getElementById('insert2').textContent = arrayDos;
-    });
+
+    }); //event listener ends here
 
     //this clears the text area
     function clearTextArea() {
         document.getElementById('textarea').value = '';
-    }
+    };
 
 // })(document); //this calls the function immediately
-
-//https://www.youtube.com/watch?v=myL4xmtAVtw
-//https://www.youtube.com/watch?v=JBdyASuhq1c
-//https://javascript.info/task/shuffle
-//https://www.w3resource.com/javascript-exercises/javascript-array-exercise-17.php
 
 //1. get the textbox info and push all names into the empty array
 //2. use a function to shuffle the names
 //3. divide the names into the two separate lists - use .slice to separate the array
 //4. use map to iterate over each item in both new arrays and output them into <li>s 
-//5. create onClick on button
+//5. create button that fires the above events
+//6. create a button that clears the text
