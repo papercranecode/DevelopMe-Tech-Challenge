@@ -5,16 +5,42 @@
     padding: 10px;
 }
 
-//tablet version
-@media screen and (max-width: 1024px) {
-    .footer {
-        display: none;
-    };
-}
-
 //mobile version
 @media screen and (max-width: 768px) {
     .footer {
-        display: none;
-    }
+        display: block;
+    };
 }
+
+//tablet version
+@media screen and (max-width: 1024px) {
+    .footer {
+        display: block;
+    };
+}
+
+
+
+// .footer {
+//     background-color: #fff;
+
+//     @include mq($small) {
+//         background-color: #000;
+//     }
+
+//     @include mq($medium) {
+//         background-color: #ececec;
+//     }
+
+//     &__contact {
+
+//         &--batman {
+
+//         }
+
+//     }
+// }
+
+// .footer__contact {
+
+// }

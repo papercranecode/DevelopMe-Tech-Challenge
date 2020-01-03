@@ -4,10 +4,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     overflow: scroll;
-    color: $colourBlack;
+    color: $colourPale;
     font-size: $fontSizeLarge;
     width: 65vw;
-    padding: 15px;
+    padding: 25px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(2, 1fr);
@@ -109,7 +109,7 @@
 }
 
 //tablet version
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
     .team-section {
         width: 100vw;
         padding: 15px;
