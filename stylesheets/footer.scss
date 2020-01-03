@@ -3,44 +3,5 @@
     background: $colourBlack;
     color: $colourOrange;
     padding: 10px;
-}
-
-//mobile version
-// @media screen and (max-width: 768px) {
-//     .footer {
-//         display: block;
-//     };
-// }
-
-// //tablet version
-// @media screen and (max-width: 1024px) {
-//     .footer {
-//         display: block;
-//     };
-// }
-
-
-
-.footer {
-    background-color: #fff;
-
-    @include mq(mobile) {
-        background-color: green;
-    }
-
-    @include mq(tablet) {
-        background-color: red;
-    }
-
-    // &__contact {
-
-    //     &--batman {
-
-    //     }
-
-    // }
-}
-
-.footer__contact {
-
+    display: block;
 }

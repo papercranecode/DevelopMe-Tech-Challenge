@@ -1,43 +1,97 @@
 .text-section {
+    width: 100vw;
+    padding: 25px;
+    display: block;
+    overflow: hidden;
     background: $colourBrown;
     color: $colourBlack;
-    width: 35vw;
-    display: inline-block;
-    padding: 25px;
-    padding-top: 10vh;
-    overflow: hidden;
+    text-align: center;
+
+    @include mq(tablet) {
+        display: block;
+        font-size: $fontSizeTabletLarge;
+    }
+
+    @include mq(desktop) {
+        width: 35vw;
+        display: inline-block;
+        overflow: hidden;
+    }
 }
 
 .header {
-    display: block;
-    font-size: $fontSizeHeader;
+    font-size: $fontSizeMobileLarge;
     font-weight: bolder;
-    padding: 10px;
-    margin-top: 10vh;
+    display: block;
+    text-align: center;
+    padding: 25px;
+    
+    @include mq(tablet) {
+        text-align: center;
+        font-size: $fontSizeTabletLarge; 
+    }
+
+    @include mq(desktop) {
+        padding-top: 15vh;
+    }
+
+    @include mq(wide) {
+        display: block;
+        font-size: $fontSizeHeader;
+        padding: 10px;
+        margin-top: 10vh;
+    }
 }
 
 .main-text {
+    padding: 10px; 
     font-size: $fontSizeRegular;
     color: $colourPale;
     display: block;
-    padding: 10px;
+
+    @include mq(desktop) {
+        display: block;
+    }
 }
 
 .random {
-    margin-bottom: -3vh;
+    margin-top: 20px;
+
+    @include mq(desktop) {
+        font-size: $fontTabletTeam;
+    }
 }
 
 .team {
+    float: none;
+    text-align: center;
     font-family: 'Open Sans';
     color: $colourOrange;
-    font-size: $fontSizeTeam;
-    float: right;
-    margin-bottom: -3vh;
-    margin-top: -2vh;
+    font-size: $fontMobileTeam;
+    margin-top: -10px;
+    margin-bottom: -10px;
+
+    @include mq(tablet) {
+        font-size: $fontTabletTeam;
+    }
+
+    @include mq(desktop) {
+        font-size: $fontTabletTeam;
+    }
+    
+    @include mq(wide) {
+        float: right;
+        font-size: $fontSizeTeam; 
+    }
 }
  
 .picker {
-    margin-top: -3vh;
+    padding: 1px 10px;
+
+    @include mq(desktop) {
+        margin-top: -3vh;
+        font-size: $fontTabletTeam;
+    }
 }
 
 .line1 {
@@ -45,8 +99,16 @@
     padding: 2px;
     margin-top: 1vh;
     width: 12.5vw;
-    display: block;
-    float: right;
+    display: none;
+    
+    @include mq(tablet) {
+        display: none;
+    }
+
+    @include mq(wide) {
+        display: block;
+        float: right;
+    }
 }
 
 .line2 {
@@ -54,108 +116,14 @@
     padding: 2px;
     margin-top: -1vh;
     width: 20vw;
-    display: block;
-    float: left;
-}
- 
-//tablet versions
-@media screen and (max-width: 1250px) {
-    .header {
-        text-align: center;
-        font-size: $fontSizeTabletLarge; 
-        padding: 25px;
-    }
+    display: none;
 
-    .team {
-        font-size: $fontSizeTabletLarge; 
-        float: none;
-        text-align: center;
-        padding: 10px 20px;
-    }
-}
-
-@media screen and (max-width: 1150px) {
-    .text-section {
-        margin-top: -5vh;
-        width: 100vw;
-        display: block;
-        padding: 10px;
-        overflow: hidden;
-        text-align: center;
-        font-size: $fontSizeTabletLarge;
-    }
-
-    .main-text {
-        padding: 10px;
-        display: block;
-    }
-
-    .header {
-        padding: 10px;
-        display: block;
-        font-size: $fontSizeTabletLarge;
-    }
-
-    .random {
-        padding: 0px 10px;
-    }
-
-    .team {
-        float: none;
-        margin-bottom: -3vh;
-        font-size: $fontTabletTeam;
-    }
-
-    .picker {
-        padding: 1px 10px;
-    }
-
-    .line1, .line2 {
+    @include mq(tablet) {
         display: none;
     }
-}
 
-//mobile version
-@media screen and (max-width: 768px) {
-    .text-section {
-        margin-top: -5vh;
-        width: 100vw;
-        padding-top: 0vh;
+    @include mq(wide) {
         display: block;
-        padding: 5px;
-        overflow: hidden;
-    }
-
-    .main-text {
-        padding: 10px;
-        width: 75vw;
-    }
-
-    .header {
-        font-size: $fontSizeMobileLarge;
-        padding: 0vh;
-        display: block;
-        text-align: center;
-    }
-
-    .random {
-        padding: 0vh;
-        margin-bottom: 0vh;
-    }
-
-    .team {
-        padding: 0vh;
-        margin-bottom: -1vh;
-        font-size: $fontMobileTeam;
-        float: none;
-    }
-
-    .picker {
-        padding: 0vh;
-        margin-top: 0vh;
-    }
-
-    .line1, .line2 {
-        display: none;
+        float: left;
     }
 }

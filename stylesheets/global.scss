@@ -5,23 +5,15 @@
 }
 
 .body {
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-}
+    height: 100%;
+    width: 100%;
+    display: block;
 
-//tablet version
-@media screen and (max-width: 1150px) {
-    .body {
+    @include mq(tablet) {
         display: block;
-        height: 100%;
-    };
-}
+    }
 
-//mobile version
-@media screen and (max-width: 768px) {
-    .body {
-        display: block;
-        height: 100%;
-    };
+    @include mq(desktop) {
+        display: flex;
+    }
 }

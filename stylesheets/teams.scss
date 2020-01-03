@@ -6,97 +6,160 @@
     overflow: scroll;
     color: $colourPale;
     font-size: $fontSizeLarge;
-    width: 65vw;
     padding: 25px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    display: block;
+    position: relative;
     justify-items: center;
-    padding-top: 20vh;
-    overflow: hidden;
+    width: 100vw;
+
+    @include mq(desktop) {
+        width: 65vw;
+        padding: 25px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        justify-items: center;
+        padding-top: 20vh;
+        overflow: hidden;
+    }
 }
 
 .enter-team-names {
-    padding: 15px;
+
+    @include mq(desktop) {
+        padding: 15px;
+    }
 }
 
 .label {
-    font-size: $fontSizeMedium;
-    font-weight: bold;
     background: $colourBrown;
-    padding: 15px;
+    font-weight: bold;
     text-align: center;
     border-radius: 15px 15px 0px 0px;
-    width: 25vw;
+    display: block;
+    width: 75vw;
+    font-size: $fontSizeMedium;
+    padding: 15px;
+
+    @include mq(desktop) {
+        font-size: $fontSizeMedium;
+        width: 25vw;
+    }
 }
 
 .textarea {
-    resize: none;
-    overflow: auto;
-    width: 20vw;
-    height: 35vh;
     border: 0px $colourBrown;
     padding: 15px;
     background: $colourPale;
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
     border-radius: 0px 0px 15px 15px;
-    width: 25vw;
+    display: block;
+    width: 75vw;
+    resize: none;
+    overflow: auto;
+
+    @include mq(tablet) {
+        display: block;
+        width: 75vw;
+    }
+
+    @include mq(desktop) {
+        width: 20vw;
+        height: 35vh;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        width: 25vw;
+    }
+}
+
+.buttons {
+    padding: 10px;
+    text-align: center;
 }
 
 .button {
     background: $colourBrown;
     color: $colourPale;
-    height: 5vh;
-    width: 12vw;
-    font-size: $fontSizeRegular;
     border-radius: 5px;
+    display: inline-block;
+    height: 5vh;
+    font-size: $fontSizeRegular;
+    text-align: center;
 }
 
 .button-clear {
     background: $colourBrown;
     color: $colourPale;
-    height: 5vh;
-    width: 12vw;
-    font-size: $fontSizeRegular;
     border-radius: 5px;
+    display: inline-block;
+    height: 5vh;
+    font-size: $fontSizeRegular;
+    text-align: center;
 }
 
 .team-names {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    display: block;
-    text-align: center;
+    @include mq(desktop) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        display: block;
+        text-align: center;
+    }
 }
 
 .teams {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    padding: 10px;
+    margin-top: 3vh;
+
+    @include mq(tablet) {
+        padding: 10px;
+    }
+
+    @include mq(desktop) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
 }
 
 .team-card {
-    padding: 15px;
+
+    @include mq(desktop) {
+        padding: 15px;
+    }
 }
 
 .team-header {
-    font-size: $fontSizeMedium;
-    font-weight: bold;
     background: $colourBrown;
-    width: 25vw;
-    text-align: center;
+    font-weight: bold;
     padding: 15px;
     border-radius: 15px 15px 0px 0px;
+    display: block;
+    width: 75vw;
+    text-align: center;
+    font-size: $fontSizeMedium;
+
+    @include mq(desktop) {
+        width: 25vw;
+    }
 }
 
 .names {
-    font-size: $fontSizeRegular;
     background: $colourPale;
-    width: 25vw;
     padding: 15px;
     text-decoration: none;
     list-style-type: none;
     border-radius: 0px 0px 15px 15px;
+    display: block;
+    width: 75vw;
+
+    @include mq(tablet) {
+        display: block;
+        width: 75vw;
+    }
+
+    @include mq(desktop) {
+        font-size: $fontSizeRegular;
+        width: 25vw;
+    }
 }
 
 .vs {
@@ -106,93 +169,4 @@
     display: block;
     text-align: center;
     padding: 10px;
-}
-
-//tablet version
-@media screen and (max-width: 1150px) {
-    .team-section {
-        width: 100vw;
-        padding: 15px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        display: block;    
-    }
-
-    .label {
-        display: block;
-        width: 75vw;
-    }
-
-    .textarea {
-        display: block;
-        width: 75vw;
-    }
-
-    .button {
-        display: inline-block;
-        width: 20vw;
-    }
-
-    .button-clear {
-        width: 20vw;
-    }
-
-    .teams {
-        padding: 10px;
-        margin-top: 5vh;
-    }
-
-    .team-header {
-        display: block;
-        width: 75vw;
-    }
-
-    .names {
-        display: block;
-        width: 75vw;
-    }
-}
-
-//mobile version
-@media screen and (max-width: 768px) {
-    .team-section {
-        width: 100vw;
-        padding: 15px;
-        display: block;
-        position: relative;
-    }
-
-    .label {
-        display: block;
-        width: 75vw;
-    }
-
-    .textarea {
-        display: block;
-        width: 75vw;
-    }
-
-    .button {
-        display: inline-block;
-        width: 20vw;
-    }
-
-    .button-clear {
-        width: 20vw;
-    }
-
-    .teams {
-        padding: 10px;
-        margin-top: 5vh;
-    }
-
-    .team-header {
-        display: block;
-        width: 75vw;
-    }
-
-    .names {
-        display: block;
-        width: 75vw;
-    }
 }
