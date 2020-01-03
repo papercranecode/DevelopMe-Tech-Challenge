@@ -40,22 +40,45 @@
         console.log(myArray);
 
         //this splits the array into two separate arrays
-        let array1 = myArray.slice(0, (myArray.length / 2));
-        let array2 = myArray.slice((myArray.length / 2), myArray.length);
+        let array1 = myArray.slice(0, Math.round(myArray.length / 2));
+        let array2 = myArray.slice(Math.ceil(myArray.length / 2), myArray.length);
 
         //testing that we are getting two separate, randomised arrays
         console.log(array1);
         console.log(array2);
 
-        //br = document.createElement('br');
+        //get the HTML elements we want to insert the names into by their ID
+        const insert1 = document.getElementById('insert1'),
+              insert2 = document.getElementById('insert2');
+
+              //using a function to put the names from the two arrays into the HTML, the function does the same for both arrays so can be called upon twice, once for each array
+              const insertList = (elm, arr) => {
+                  //using a while loop to clear the textarea each time we have randomised the names, so that it doesn't duplicate them
+                  while (elm.hasChildNodes()) {
+                elm.removeChild(elm.lastChild);
+            }
+    
+            //using a for loop to insert HTML tags so that we can put each name on a new line
+            for (let i = 0; i < arr.length; i++) {
+                const el = arr[i];
+    
+                elm.insertAdjacentHTML('beforeend', '<div>' + el + '</div>');
+            }
+        }
+
+        //we call the above function twice, once for each array
+        insertList(insert1, array1);
+        insertList(insert2, array2);
 
         //converting the array items into strings so that we can output them on the page
         let arrayTeamOne = array1.toString().split(',').join('\n');
         let arrayTeamTwo = array2.toString().split(',').join('\n');
 
+        console.log(arrayTeamOne);
+
         //inserting the strings into each team card section
-        document.getElementById('insert1').textContent = arrayTeamOne;
-        document.getElementById('insert2').textContent = arrayTeamTwo;
+        
+        // document.getElementById('insert2').textContent = arrayTeamTwo;
 
     }); //event listener ends here
 
