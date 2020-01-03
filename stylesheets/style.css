@@ -8,7 +8,6 @@
   font-family: "Roboto", arial, sans-serif;
   margin: 0 auto;
   box-sizing: border-box;
-  max-height: 100vh;
 }
 
 .body {
@@ -95,7 +94,7 @@
     padding: 10px;
     overflow: hidden;
     text-align: center;
-    font-size: 9vh;
+    font-size: 7vh;
   }
 
   .main-text {
@@ -110,16 +109,17 @@
   }
 
   .random {
-    padding: 1px;
+    padding: 0px 10px;
   }
 
   .team {
-    padding: 1px;
+    padding: 0px 10px;
     float: none;
+    margin-bottom: -3vh;
   }
 
   .picker {
-    padding: 1px;
+    padding: 1px 10px;
   }
 
   .line1, .line2 {
@@ -142,7 +142,7 @@
   }
 
   .header {
-    font-size: 7vh;
+    font-size: 6vh;
     padding: 0vh;
     display: block;
     text-align: center;
@@ -157,6 +157,7 @@
     padding: 0vh;
     margin-bottom: 0vh;
     margin-top: 0vh;
+    font-size: 8vh;
     float: none;
   }
 
@@ -283,6 +284,8 @@
   .team-section {
     width: 100vw;
     padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: block;
   }
 

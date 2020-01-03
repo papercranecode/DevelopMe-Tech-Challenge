@@ -67,7 +67,7 @@
         padding: 10px;
         overflow: hidden;
         text-align: center;
-        font-size: $fontTabletTeam;
+        font-size: $fontSizeTabletLarge;
     }
 
     .main-text {
@@ -82,16 +82,17 @@
     }
 
     .random {
-        padding: 1px;
+        padding: 0px 10px;
     }
 
     .team {
-        padding: 1px;
+        padding: 0px 10px;
         float: none;
+        margin-bottom: -3vh;
     }
 
     .picker {
-        padding: 1px;
+        padding: 1px 10px;
     }
 
     .line1, .line2 {
@@ -116,7 +117,7 @@
     }
 
     .header {
-        font-size: $fontMobileTeam;
+        font-size: $fontSizeMobileLarge;
         padding: 0vh;
         display: block;
         text-align: center;
@@ -131,6 +132,7 @@
         padding: 0vh;
         margin-bottom: 0vh;
         margin-top: 0vh;
+        font-size: $fontMobileTeam;
         float: none;
     }
 
