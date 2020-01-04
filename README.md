@@ -33,7 +33,7 @@ Once I had set out the above goals, I thought about what technologies I wanted t
 
 With my goals in place I then spent some time researching other team picker websites and apps, to see how other developers have solved similar challenges before me. I then spent some time thinking about how I would go about making my product stand out, and what I could do differently.
 
-After this I created the wireframe designs using [Wireframe.cc](wireframe.cc/). Starting with the mobile view for efficiency, I then built up to the tablet version and desktop versions. After I created the wireframe layouts, I researched colour schemes that I felt were suitable for the vibe and purpose of the product, picking a colour scheme that I felt reflected the 'outdoorsiness' of football.
+After this I created the wireframe designs using [Wireframe.cc](wireframe.cc/). I decided to design from mobile first, because additional code required for larger views can slow down the load time and is not necessary for mobile users. In addition, I also considered that many mobile users may be on a slow connection or have limited data. I then built up to the tablet version and desktop versions. After I created the wireframe layouts, I researched colour schemes that I felt were suitable for the vibe and purpose of the product, picking a colour scheme that I felt reflected the 'outdoorsiness' of football.
 
 Once the wireframes were in place I started by first setting up the HTML in index.html, including the classes needed for minimal styling. I then created a folder for my stylesheets, and set up SASS, outputting the styling components into a single CSS file that would not be touched, which I linked to in index.html. I set up the styling settings first in settings.scss, using my selected colour scheme and accessibility friendly fonts and font sizes.
 
@@ -55,18 +55,22 @@ Finally, I checked the accessibility of my code using [WAVE](https://wave.webaim
 * JavaScript
 * Git
 * Command Line
+* GIMP Image Editor 2.10
+* Adobe Color
+* Google Fonts
 * Accessibility checking tools
 
 ## Wireframes
 * [Desktop](https://wireframe.cc/Jxg0bS)
 * [Tablet](https://wireframe.cc/EhHF0W)
 * [Mobile](https://wireframe.cc/Tlc12X)
+![Example screenshot](./images/Wireframe-m1.png) ![Example screenshot](./images/Wireframe-t1.png) ![Example screenshot](./images/Wireframe-d1.png)
 
 ## Screenshots
 ![Example screenshot](./images/screenshot.png)
 
 ## Setup
-I chose to create the challenge as a website, so no setup is necessary - simply download the repository and open index.html in your browser.
+Simply download the repository and open index.html in your browser.
 
 ## Features
 The website features:
