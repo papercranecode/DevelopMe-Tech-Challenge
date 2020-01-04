@@ -65,6 +65,7 @@ Finally, I checked the accessibility of my code using [WAVE](https://wave.webaim
 * [Tablet](https://wireframe.cc/EhHF0W)
 * [Mobile](https://wireframe.cc/Tlc12X)
 ![Example screenshot](./images/Wireframe-m1.png) ![Example screenshot](./images/Wireframe-t1.png) ![Example screenshot](./images/Wireframe-d1.png)
+![Example screenshot](./images/colour-scheme.png)
 
 ## Screenshots
 ![Example screenshot](./images/screenshot.png)
