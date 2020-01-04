@@ -25,6 +25,7 @@
     display: block;
     text-align: center;
     padding: 20px;
+    padding-top: 5vh;
     
     @include mq(tablet) {
         text-align: center;
@@ -32,8 +33,8 @@
     }
 
     @include mq(desktop) {
-        padding-top: 20vh; 
         padding: 45px;
+        padding-top: 20vh; 
     }
 
     @include mq(wide) {
@@ -139,7 +140,7 @@
     background: $colourOrange;
     padding: 2px;
     margin-top: -1vh;
-    width: 20vw;
+    width: 22vw;
     display: none;
 
     @include mq(tablet) {

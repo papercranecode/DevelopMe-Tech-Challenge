@@ -1,49 +1,9 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Roboto", sans-serif;
   font-family: "Montserrat", sans-serif;
   font-family: "Open Sans", sans-serif;
   src: url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap");
 }
-body:before {
-  background-color: #FCF8E3;
-  border-bottom: 1px solid #FBEED5;
-  border-left: 1px solid #FBEED5;
-  color: #C09853;
-  font: small-caption;
-  padding: 3px 6px;
-  pointer-events: none;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 100;
-}
-@media (min-width: 20em) {
-  body:before {
-    content: "mobile ≥ 320px (20em)";
-  }
-}
-@media (min-width: 30em) {
-  body:before {
-    content: "mobileLandscape ≥ 480px (30em)";
-  }
-}
-@media (min-width: 46.25em) {
-  body:before {
-    content: "tablet ≥ 740px (46.25em)";
-  }
-}
-@media (min-width: 61.25em) {
-  body:before {
-    content: "desktop ≥ 980px (61.25em)";
-  }
-}
-@media (min-width: 81.25em) {
-  body:before {
-    content: "wide ≥ 1300px (81.25em)";
-  }
-}
-
 * {
   font-family: "Roboto", arial, sans-serif;
   margin: 0 auto;
@@ -51,7 +11,7 @@ body:before {
 }
 
 .body {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   display: block;
 }
@@ -63,6 +23,7 @@ body:before {
 @media (min-width: 61.25em) {
   .body {
     display: flex;
+    height: 100vh;
   }
 }
 
@@ -95,6 +56,7 @@ body:before {
   display: block;
   text-align: center;
   padding: 20px;
+  padding-top: 5vh;
 }
 @media (min-width: 46.25em) {
   .header {
@@ -104,8 +66,8 @@ body:before {
 }
 @media (min-width: 61.25em) {
   .header {
-    padding-top: 20vh;
     padding: 45px;
+    padding-top: 20vh;
   }
 }
 @media (min-width: 81.25em) {
@@ -225,7 +187,7 @@ body:before {
   background: #bf5d24;
   padding: 2px;
   margin-top: -1vh;
-  width: 20vw;
+  width: 22vw;
   display: none;
 }
 @media (min-width: 46.25em) {
@@ -439,9 +401,10 @@ body:before {
 .footer {
   text-align: center;
   background: #0d0c0b;
-  color: #bf5d24;
+  color: #d9d7ba;
   padding: 10px;
   display: block;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */

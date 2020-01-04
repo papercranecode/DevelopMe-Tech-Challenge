@@ -5,7 +5,7 @@
 }
 
 .body {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     display: block;
 
@@ -15,5 +15,6 @@
 
     @include mq(desktop) {
         display: flex;
+        height: 100vh;
     }
 }

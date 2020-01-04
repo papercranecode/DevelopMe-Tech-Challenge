@@ -330,31 +330,33 @@ $mq-media-type: all !default;
 ///  @include mq-show-breakpoints;
 ///
 ///  // Show breakpoints using custom settings
-///  @include mq-show-breakpoints((L, XL), (S: 300px, L: 800px, XL: 1200px));
-@mixin mq-show-breakpoints($show-breakpoints: $mq-show-breakpoints, $breakpoints: $mq-breakpoints) {
-    body:before {
-        background-color: #FCF8E3;
-        border-bottom: 1px solid #FBEED5;
-        border-left: 1px solid #FBEED5;
-        color: #C09853;
-        font: small-caption;
-        padding: 3px 6px;
-        pointer-events: none;
-        position: fixed;
-        right: 0;
-        top: 0;
-        z-index: 100;
+//  @include mq-show-breakpoints((L, XL), (S: 300px, L: 800px, XL: 1200px));
 
-        // Loop through the breakpoints that should be shown
-        @each $show-breakpoint in $show-breakpoints {
-            $width: mq-get-breakpoint-width($show-breakpoint, $breakpoints);
-            @include mq($show-breakpoint, $breakpoints: $breakpoints) {
-                content: "#{$show-breakpoint} ≥ #{$width} (#{mq-px2em($width)})";
-            }
-        }
-    }
-}
+//comment out the below to hide breakppint display:
+// @mixin mq-show-breakpoints($show-breakpoints: $mq-show-breakpoints, $breakpoints: $mq-breakpoints) {
+//     body:before {
+//         background-color: #FCF8E3;
+//         border-bottom: 1px solid #FBEED5;
+//         border-left: 1px solid #FBEED5;
+//         color: #C09853;
+//         font: small-caption;
+//         padding: 3px 6px;
+//         pointer-events: none;
+//         position: fixed;
+//         right: 0;
+//         top: 0;
+//         z-index: 100;
 
-@if length($mq-show-breakpoints) > 0 {
-    @include mq-show-breakpoints;
-}
+//         // Loop through the breakpoints that should be shown
+//         @each $show-breakpoint in $show-breakpoints {
+//             $width: mq-get-breakpoint-width($show-breakpoint, $breakpoints);
+//             @include mq($show-breakpoint, $breakpoints: $breakpoints) {
+//                 content: "#{$show-breakpoint} ≥ #{$width} (#{mq-px2em($width)})";
+//             }
+//         } 
+//     }
+// }
+
+// @if length($mq-show-breakpoints) > 0 {
+//     @include mq-show-breakpoints;
+// }
