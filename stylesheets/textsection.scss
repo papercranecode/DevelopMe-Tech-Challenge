@@ -32,13 +32,13 @@
     }
 
     @include mq(desktop) {
-        padding-top: 20vh;
+        padding-top: 20vh; 
+        padding: 45px;
     }
 
     @include mq(wide) {
         display: block;
         font-size: $fontSizeHeader;
-        padding: 10px;
         padding-top: 20vh;
     }
 }
@@ -51,6 +51,10 @@
 
     @include mq(desktop) {
         display: block;
+    }
+
+    @include mq(wide) {
+        padding: 30px;
     }
 }
 
