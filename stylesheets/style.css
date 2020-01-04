@@ -68,7 +68,6 @@ body:before {
 
 .text-section {
   width: 100vw;
-  padding: 25px;
   display: block;
   overflow: hidden;
   background: #595143;
@@ -78,7 +77,7 @@ body:before {
 @media (min-width: 46.25em) {
   .text-section {
     display: block;
-    font-size: 7vh;
+    font-size: 6vh;
   }
 }
 @media (min-width: 61.25em) {
@@ -86,6 +85,7 @@ body:before {
     width: 35vw;
     display: inline-block;
     overflow: hidden;
+    font-size: 7vh;
   }
 }
 
@@ -94,17 +94,17 @@ body:before {
   font-weight: bolder;
   display: block;
   text-align: center;
-  padding: 25px;
+  padding: 20px;
 }
 @media (min-width: 46.25em) {
   .header {
     text-align: center;
-    font-size: 7vh;
+    font-size: 6vh;
   }
 }
 @media (min-width: 61.25em) {
   .header {
-    padding-top: 15vh;
+    padding-top: 20vh;
   }
 }
 @media (min-width: 81.25em) {
@@ -112,12 +112,12 @@ body:before {
     display: block;
     font-size: 10vh;
     padding: 10px;
-    margin-top: 10vh;
+    padding-top: 20vh;
   }
 }
 
 .main-text {
-  padding: 10px;
+  padding: 20px;
   font-size: 15px;
   color: #d9d7ba;
   display: block;
@@ -129,11 +129,23 @@ body:before {
 }
 
 .random {
-  margin-top: 20px;
+  margin-bottom: -2vh;
+}
+@media (min-width: 46.25em) {
+  .random {
+    font-size: 6vh;
+  }
 }
 @media (min-width: 61.25em) {
   .random {
-    font-size: 9vh;
+    font-size: 7vh;
+  }
+}
+@media (min-width: 81.25em) {
+  .random {
+    float: left;
+    margin-top: 1vh;
+    font-size: 7vh;
   }
 }
 
@@ -153,7 +165,7 @@ body:before {
 }
 @media (min-width: 61.25em) {
   .team {
-    font-size: 9vh;
+    font-size: 8vh;
   }
 }
 @media (min-width: 81.25em) {
@@ -166,10 +178,20 @@ body:before {
 .picker {
   padding: 1px 10px;
 }
+@media (min-width: 46.25em) {
+  .picker {
+    font-size: 6vh;
+  }
+}
 @media (min-width: 61.25em) {
   .picker {
-    margin-top: -3vh;
-    font-size: 9vh;
+    font-size: 7vh;
+  }
+}
+@media (min-width: 81.25em) {
+  .picker {
+    margin-bottom: 1vh;
+    font-size: 7vh;
   }
 }
 
@@ -219,7 +241,7 @@ body:before {
   overflow: scroll;
   color: #d9d7ba;
   font-size: 30px;
-  padding: 25px;
+  padding: 45px 25px;
   display: block;
   position: relative;
   justify-items: center;
@@ -228,7 +250,6 @@ body:before {
 @media (min-width: 61.25em) {
   .team-section {
     width: 65vw;
-    padding: 25px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(2, 1fr);
@@ -255,6 +276,11 @@ body:before {
   font-size: 25px;
   padding: 15px;
 }
+@media (min-width: 46.25em) {
+  .label {
+    width: 65vw;
+  }
+}
 @media (min-width: 61.25em) {
   .label {
     font-size: 25px;
@@ -275,7 +301,7 @@ body:before {
 @media (min-width: 46.25em) {
   .textarea {
     display: block;
-    width: 75vw;
+    width: 65vw;
   }
 }
 @media (min-width: 61.25em) {
@@ -325,6 +351,7 @@ body:before {
 .teams {
   padding: 10px;
   margin-top: 3vh;
+  font-size: 15px;
 }
 @media (min-width: 46.25em) {
   .teams {
@@ -333,6 +360,7 @@ body:before {
 }
 @media (min-width: 61.25em) {
   .teams {
+    margin-top: 0vh;
     grid-column: 2/3;
     grid-row: 1/2;
   }
@@ -340,7 +368,7 @@ body:before {
 
 @media (min-width: 61.25em) {
   .team-card {
-    padding: 15px;
+    padding: 10px;
   }
 }
 
@@ -354,6 +382,11 @@ body:before {
   text-align: center;
   font-size: 25px;
 }
+@media (min-width: 46.25em) {
+  .team-header {
+    width: 65vw;
+  }
+}
 @media (min-width: 61.25em) {
   .team-header {
     width: 25vw;
@@ -362,6 +395,7 @@ body:before {
 
 .names {
   background: #d9d7ba;
+  color: #595143;
   padding: 15px;
   text-decoration: none;
   list-style-type: none;
@@ -372,7 +406,7 @@ body:before {
 @media (min-width: 46.25em) {
   .names {
     display: block;
-    width: 75vw;
+    width: 65vw;
   }
 }
 @media (min-width: 61.25em) {

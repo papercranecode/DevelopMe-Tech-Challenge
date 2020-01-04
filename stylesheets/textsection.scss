@@ -1,6 +1,5 @@
 .text-section {
     width: 100vw;
-    padding: 25px;
     display: block;
     overflow: hidden;
     background: $colourBrown;
@@ -16,6 +15,7 @@
         width: 35vw;
         display: inline-block;
         overflow: hidden;
+        font-size: $fontDesktopLarge; 
     }
 }
 
@@ -24,7 +24,7 @@
     font-weight: bolder;
     display: block;
     text-align: center;
-    padding: 25px;
+    padding: 20px;
     
     @include mq(tablet) {
         text-align: center;
@@ -32,19 +32,19 @@
     }
 
     @include mq(desktop) {
-        padding-top: 15vh;
+        padding-top: 20vh;
     }
 
     @include mq(wide) {
         display: block;
         font-size: $fontSizeHeader;
         padding: 10px;
-        margin-top: 10vh;
+        padding-top: 20vh;
     }
 }
 
 .main-text {
-    padding: 10px; 
+    padding: 20px; 
     font-size: $fontSizeRegular;
     color: $colourPale;
     display: block;
@@ -55,10 +55,20 @@
 }
 
 .random {
-    margin-top: 20px;
+    margin-bottom: -2vh;
+
+    @include mq(tablet) {
+        font-size: $fontSizeTabletLarge;
+    }
 
     @include mq(desktop) {
-        font-size: $fontTabletTeam;
+        font-size: $fontDesktopLarge;
+    }
+
+    @include mq(wide) {
+        float: left;
+        margin-top: 1vh;
+        font-size: $fontDesktopLarge;
     }
 }
 
@@ -76,7 +86,7 @@
     }
 
     @include mq(desktop) {
-        font-size: $fontTabletTeam;
+        font-size: $fontDesktopTeam;
     }
     
     @include mq(wide) {
@@ -88,9 +98,17 @@
 .picker {
     padding: 1px 10px;
 
+    @include mq(tablet) {
+        font-size: $fontSizeTabletLarge;
+    }
+
     @include mq(desktop) {
-        margin-top: -3vh;
-        font-size: $fontTabletTeam;
+        font-size: $fontDesktopLarge;
+    }
+
+    @include mq(wide) {
+        margin-bottom: 1vh;
+        font-size: $fontDesktopLarge;
     }
 }
 
