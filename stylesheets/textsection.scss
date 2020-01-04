@@ -60,6 +60,7 @@
 
 .random {
     margin-bottom: -2vh;
+    color: $colourPale;
 
     @include mq(tablet) {
         font-size: $fontSizeTabletLarge;
@@ -101,6 +102,7 @@
  
 .picker {
     padding: 1px 10px;
+    color: $colourPale;
 
     @include mq(tablet) {
         font-size: $fontSizeTabletLarge;
