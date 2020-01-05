@@ -92,7 +92,7 @@ Simply [download the repository](https://help.github.com/en/github/creating-clon
 
 ## Features
 The website features:
-* A textarea in which you can enter the names of your players
+* A text area in which you can enter the names of your players
 * A JavaScript Event Listener that fires when the first button is clicked
 * JavaScript code blocks that take the value of the text area, picks a random index from the array, slices the array into two separate arrays, removes child nodes from the array to avoid duplications if the button is clicked twice, and a loop that uses insertAdjacentHTML to create new HTML tags to insert each name back into the HTML
 * A second button that clears the contents of the text area
