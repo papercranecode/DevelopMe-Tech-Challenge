@@ -1,7 +1,9 @@
 .team-section {
     background: $colourOrange;
-    background-image: url('../images/football1.jpg');
+    background-image: url('../images/football2.jpg');
+    background-blend-mode: normal;
     background-size: cover;
+    background-position: bottom right; 
     background-repeat: no-repeat;
     overflow: scroll;
     color: $colourPale;
@@ -59,6 +61,7 @@
     padding: 15px;
     background: $colourPale;
     border-radius: 0px 0px 15px 15px;
+    box-shadow: 5px 10px 18px $colourBlack;
     display: block;
     width: 75vw;
     height: 35vh;
@@ -92,6 +95,9 @@
     height: 5vh;
     font-size: $fontSizeRegular;
     text-align: center;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 5px $colourGreen;
 }
 
 .button-clear {
@@ -102,6 +108,18 @@
     height: 5vh;
     font-size: $fontSizeRegular;
     text-align: center;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 5px $colourGreen;
+}
+
+.button:hover, .button-clear:hover {
+    background: $colourOrange;
+}
+
+.button:active, .button-clear:active {
+    box-shadow: 0 1px $colourGreen;
+    transform: translateY(4px);
 }
 
 .team-names {
@@ -162,6 +180,7 @@
     text-decoration: none;
     list-style-type: none;
     border-radius: 0px 0px 15px 15px;
+    box-shadow: 5px 10px 18px $colourBlack;
     display: block;
     width: 75vw;
 
