@@ -234,10 +234,8 @@
   }
 }
 
-@media (min-width: 61.25em) {
-  .enter-team-names {
-    padding: 15px;
-  }
+.enter-team-names {
+  padding: 15px;
 }
 
 .label {
