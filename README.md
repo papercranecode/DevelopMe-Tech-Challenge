@@ -75,12 +75,19 @@ Finally, I checked the accessibility of my code using [WAVE](https://wave.webaim
 Simply [download the repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) and open index.html in your browser:
 
 1. Under the repository name, click clone or download
+
 ![Example screenshot](./images/clone.png)
+
 2. To clone the repository using HTTPS, under 'Clone with HTTPS', click the copy icon on the right hand side. To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click the right hand copy icon
+
 ![Example screenshot](./images/https-clone.png)
+
 3. Open Terminal and change the current working directory to the location where you want the cloned directory to be made
-4. Type `git clone`, and then paste the URL you copied in Step 2:
+
+4. Type `git clone`, and then paste the URL you copied in Step 2: 
+
 `$ git clone git@github.com:papercranecode/DevelopMe-Tech-Challenge.git`
+
 5. Press Enter. Your local clone will be created, and you can open index.html in your browser
 
 ## Features
